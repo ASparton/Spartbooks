@@ -1,0 +1,128 @@
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+
+    background-color: #dee2e6;
+
+    form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        input {
+            margin: 5%;
+            padding: 4%;
+
+            background-color: transparent;
+
+            border: 1px solid #1B1B1E;
+            border-radius: 5px;
+        }
+
+        .searchButton {
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .searchButton:hover {
+            background-color: #1B1B1E;
+            color: #dee2e6;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+
+    background-color: #dee2e6;
+
+    button {
+        background-color: transparent;
+        font-size: 2.5em;
+        cursor: pointer;
+    }
+}
+
+.booksGrid {
+    width: 90%;
+    margin-left: 5%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    li {
+        width: 29%;
+        margin: 2%;
+
+        article {
+            width: 100%;
+            padding: 5%;
+
+            background-color: #dee2e6;
+            border-radius: 10px;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .bookLeft {
+                width: 70%;
+
+                h2 {
+                    margin-bottom: 1%;
+                }
+
+                img {
+                    width: max-content;
+                }
+
+                .categoriesList {
+                    width: 50%;
+                    margin-left: -2%;
+                    margin-top: 3%;
+                    margin-bottom: 3%;
+    
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: center;
+    
+                    li {
+                        width: max-content;
+                        padding: 3%;
+                        padding-top: 0%;
+                        padding-bottom: 0.5%;
+    
+                        border: 1px solid #1B1B1E;
+                        border-radius: 10px ;
+                    }
+                }
+            }
+
+            .bookRight {
+                width: 30%;
+            }
+        }
+    }
+}
